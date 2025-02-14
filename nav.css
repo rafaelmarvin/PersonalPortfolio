@@ -37,3 +37,35 @@ nav.scrolled {
 nav.scrolled .nav-links a {
     color: white;
 }
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 1024px) {
+    nav {
+        padding: 10px 30px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .nav-links a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+}

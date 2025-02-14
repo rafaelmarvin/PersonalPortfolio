@@ -129,10 +129,7 @@ window.addEventListener("scroll", function () {
             }
         }
     });
-
-
-
-
+ 
 //TYPE WRITTER EXPERIENCE//
 
 

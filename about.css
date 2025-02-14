@@ -77,3 +77,43 @@
 @keyframes blinkCursor {
     50% { border-color: transparent; }
 }
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+/* MEDIA QUERY UNTUK RESPONSIVE */
+@media (max-width: 768px) {
+    .about {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .about-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .title p, #random-greet {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .title p, #random-greet {
+        font-size: 14px;
+    }
+}
