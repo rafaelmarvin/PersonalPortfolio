@@ -1,0 +1,39 @@
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 50px;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-icon img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Warna berubah saat di-scroll */
+nav.scrolled {
+    background-color: black;
+}
+
+nav.scrolled .nav-links a {
+    color: white;
+}

@@ -1,0 +1,79 @@
+.about {
+    display: flex;
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: center; /* Pusatkan secara horizontal */
+    gap: 20px; /* Jarak antara gambar dan teks */
+    height: 100vh; /* Pastikan bagian ini mengisi tinggi layar */
+    text-align: center; /* Agar teks tetap rapi */
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    min-width: 50px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px; /* Pastikan tinggi tetap */
+}
+
+.about-img {
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
+    width: 400px;
+    height: 400px;
+    filter: grayscale(100%); /* Ubah gambar menjadi hitam putih */
+    transition: filter 0.2s ease-in-out;
+    pointer-events: fill;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.about-img:hover {
+    filter: grayscale(0%); /* Kembalikan gambar ke warna aslinya */
+}
+
+.title p {
+    font-weight: 450;
+    font-size: 20px;
+    font-family: "Cutive Mono", monospace;
+}
+
+.title h1 {
+    color: #F8F5E9;
+    background-color: #31363F;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 40px;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 500;
+}
+
+#random-greet {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FBFBFB;
+    background-color: #000000;
+    border-right: 3px solid #FBFBFB; /* Efek kursor berkedip */
+    padding: 5px 10px; /* Tambahkan padding agar background lebih luas */
+    animation: blinkCursor 0.5s infinite;
+    text-align: center;
+    min-width: none;
+}
+
+
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}

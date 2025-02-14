@@ -1,0 +1,95 @@
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #31363F;
+}
+
+/* Contact Card */
+.contact-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Card Image */
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Contact Title */
+.contact-card h3 {
+    color: #0C0C0C;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Contact Description */
+.contact-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Contact Button */
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.contact-button:hover {
+    background: #31363F;
+}
+
+#particles-contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Agar partikel ada di belakang */
+}
+
+.contact-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.contanct-title {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #31363F;
+    background-color: #FBFBFB;
+    display: inline-block; /* Agar background hanya melingkupi teks */
+    padding: 10px 20px;
+    width: fit-content; /* Menyesuaikan lebar background dengan teks */
+    margin: auto; /* Agar tetap di tengah */
+}
